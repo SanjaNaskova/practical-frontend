@@ -1,0 +1,140 @@
+:root{
+    --pink: #ed145b;
+}
+
+*{
+    box-sizing: border-box; /*za da ne iskacaat elementite nadvor od divot*/
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 0; /*za da nema prostor okolu samiot html*/
+    padding: 0;
+}
+
+#maindiv {
+    background-image: url("images/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+}
+
+.logo {
+    display: inline-block;    
+}
+
+#navbar{
+  width: 100%;/*za da odi od kraj do kraj*/
+  display: flex; /* SE STAVA SAMO NA PARENT EL: za da se stavat vo ista horizontalna linija elementite vo navbarot*/
+  align-items: center;/* -//- */
+  padding: 20px 100px;
+  justify-content: space-between;
+}
+
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /*za da mi gi oddeli list items*/
+}
+
+#navbar ul li a#active{
+ color: var(--pink);
+}
+
+.list{
+    display: inline-block;
+}
+#text{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin: auto; /*za da mi bide u sredina*/
+    font-size: 100px;
+}
+.title{
+   text-align: center;
+   font-size: 40px;
+   font-weight: 100;  
+}
+
+.content{
+    text-align: center;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 300;
+}
+.line{
+    border-color: var(--pink);
+    width: 200px;
+}
+
+#btn{
+    background-color: var(--pink);
+    padding: 15px 50px;
+    border-radius: 40px;
+    border: none;   
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#second-div{
+  width: 100%;/*za da odi od kraj do kraj*/
+  display: flex; /* SE STAVA SAMO NA PARENT EL: za da se stavat vo ista horizontalna linija child elementite*/
+  color: #2e2828b0;
+  text-align: left;
+  background-color: #80808026;
+  min-height: 700px;
+  flex-flow: row;
+  align-items: flex-start;
+  padding: 80px 20px;
+}
+
+#second-div h1{
+    font-style: italic;
+    text-align: left;
+}
+
+#second-div .line{
+    margin: 0;
+}
+#second-div p{
+    font-style: normal;
+    text-align: left;
+    line-height: 1.6;
+}
+.play{
+    color: #ed145b;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+.play img{
+    border: 50px;
+    width: 20px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 4px;
+}
+.mockup{
+    width: 750px;   
+}
+
+.left-el{
+    margin: 0px 10px;
+    margin-left: 150px;  
+    padding: 0 30px; 
+}
+
+.right-el{
+    margin: 20px;
+}
